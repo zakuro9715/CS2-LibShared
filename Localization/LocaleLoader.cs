@@ -87,7 +87,7 @@ namespace LibShared.Localization
 
         public static void Load(ILog log, LocalizationManager manager)
         {
-            new Loader(log).LoadToManager(manager);
+            new LocaleLoader(log).LoadToManager(manager);
         }
     }
 
