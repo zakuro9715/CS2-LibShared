@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34728.123
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "LibShared", "LibShared.shproj", "{A52D07A7-7CA3-408A-8BE2-9E22F7B3794F}"
+EndProject
+Global
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {16AC8869-7F78-4150-AECD-81B7C4D36CA6}
+	EndGlobalSection
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		LibShared.projitems*{a52d07a7-7ca3-408a-8be2-9e22f7b3794f}*SharedItemsImports = 13
+	EndGlobalSection
+EndGlobal
