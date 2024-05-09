@@ -23,7 +23,8 @@ using System.Linq;
 using System.Reflection;
 using Colossal.Localization;
 using Colossal.Logging;
-namespace Localization
+
+namespace LibShared.Localization
 {
 
     public class LocaleLoadException : Exception
@@ -37,16 +38,16 @@ namespace Localization
         public LocaleNotFoundException(string name) : base($"Locale resource `{name}` not found") { }
     }
 
-    public class Loader
+    public class LocaleLoader
     {
         private readonly Assembly _assembly;
         private readonly ILog _log;
         public Dictionary<string, LocaleDictionarySource> Locales { get; private set; }
-        public Loader(ILog log) : this(log, Assembly.GetExecutingAssembly())
+        public LocaleLoader(ILog log) : this(log, Assembly.GetExecutingAssembly())
         {
         }
 
-        public Loader(ILog log, Assembly assembly)
+        public LocaleLoader(ILog log, Assembly assembly)
         {
             _assembly = assembly;
             _log = log;
@@ -109,5 +110,4 @@ namespace Localization
 
         public void Unload() { }
     }
-
 }
