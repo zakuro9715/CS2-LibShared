@@ -9,9 +9,7 @@
     <Import_RootNamespace>LibShared</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Localization\" />
-  </ItemGroup>
-  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Localization\AliasLocaleSource.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Localization\LocaleLoader.cs" />
   </ItemGroup>
 </Project>
